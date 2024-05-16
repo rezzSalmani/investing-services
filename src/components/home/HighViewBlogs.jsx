@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import BlogItem from '../UI/BlogItem';
+import BlogItem from '../blog/BlogItem';
+
 const HighViewBlogs = () => {
   const [initialBlogs, setInitialBlogs] = useState(4);
   return (

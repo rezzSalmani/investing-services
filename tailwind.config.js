@@ -22,7 +22,7 @@ export default {
         'blog': "url('/images/blogHeader.jpeg')",
         'voice': "url('/images/voice/bg-green.svg')",
         'contact': "url('/images/contact-us.jpeg')",
-        'aboutUs': "url('/images/aboutUsHeader.jpeg')",
+        'aboutUs': "url('/images/aboutUsHeader.png')",
         'aboutUsImg1': "url('/images/aboutUsBgHowWeWork.png')",
         'aboutUsImg2': "url('/images/aboutUsBgOutGoal.png')",
       },

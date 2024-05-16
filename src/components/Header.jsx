@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import NavBar from './UI/NavBar';
-import { NavLink, Link } from 'react-router-dom';
+import NavBar from './NavBar';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 export const Header = () => {
+  const location = useLocation();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState({
     mainPage: false,
@@ -14,27 +15,31 @@ export const Header = () => {
       <div className="block h-16 md:h-20 bg-white">
         <div className="container items-center justify-between hidden h-full md:flex z-50">
           <ul className="flex items-center gap-6 text-xl lg:gap-8 child:flex child:items-center font-DanaMedium ">
-            <li className="relative group">
+            <li className="relative group ">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive ? 'text-colorGreen' : 'text-colorBlack'
+                  `${
+                    isActive ? 'text-colorGreen' : 'text-colorBlack'
+                  } flex items-center justify-between`
                 }
               >
-                صفحه اصلی
+                <span>صفحه اصلی</span>
+                <span className='className="transition-all duration-300 group-hover:rotate-180'>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-7 h-7"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
               </NavLink>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="transition-all duration-200 w-7 h-7 group-hover:rotate-180"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
               {/* sub menu */}
               <ul className="absolute top-0 left-0 right-0 invisible w-56 gap-2 px-8 py-8 mx-auto mt-10 space-y-2 text-base text-white list-disc transition-all shadow-md opacity-0 group-hover:visible group-hover:opacity-100 child-hover:text-zinc-700 child:transition-colors rounded-xl bg-colorGreen child:child:line-clamp-2  font-Dana">
                 <li>
@@ -55,23 +60,27 @@ export const Header = () => {
               <NavLink
                 to="/blogs"
                 className={({ isActive }) =>
-                  isActive ? 'text-colorGreen' : 'text-colorBlack'
+                  `${
+                    isActive ? 'text-colorGreen' : 'text-colorBlack'
+                  } flex items-center justify-between`
                 }
               >
-                بلاگ ها
+                <span> بلاگ ها</span>
+                <span className="transition-all duration-300  group-hover:rotate-180">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-7 h-7 mb-1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
               </NavLink>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="transition-all duration-200 w-7 h-7 group-hover:rotate-180"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
               {/* sub menu */}
               <ul className="absolute top-0 left-0 right-0 invisible w-56 gap-2 px-8 py-8 mx-auto mt-10 space-y-2 text-base text-white list-disc transition-all shadow-md opacity-0 group-hover:visible group-hover:opacity-100 child-hover:text-zinc-700 child:transition-colors rounded-xl bg-colorGreen child:child:line-clamp-2 font-Dana">
                 <li>
@@ -192,12 +201,19 @@ export const Header = () => {
                 to="/"
                 onClick={() => setShowMobileMenu(perv => !perv)}
                 className={({ isActive }) =>
-                  isActive ? 'text-colorGreenHigh' : 'text-colorBlack'
+                  `${
+                    isActive ? 'text-colorGreen' : 'text-colorBlack'
+                  } flex items-center justify-between w-full`
                 }
               >
-                صفحه اصلی
+                <span>صفحه اصلی</span>
               </NavLink>
               <span
+                className={`rounded-full flex-all h-7 w-7 hover:bg-colorGreen/10 transition-all ${
+                  location.pathname === '/'
+                    ? 'text-colorGreen'
+                    : 'text-colorBlack'
+                }`}
                 onClick={() =>
                   setMobileSubMenu({
                     ...mobileSubMenu,
@@ -249,12 +265,17 @@ export const Header = () => {
                 onClick={() => setShowMobileMenu(perv => !perv)}
                 to="/blogs"
                 className={({ isActive }) =>
-                  isActive ? 'text-colorGreenHigh' : 'text-colorBlack'
+                  isActive ? 'text-colorGreen' : 'text-colorBlack'
                 }
               >
                 بلاگ ها
               </NavLink>
               <span
+                className={`rounded-full flex-all h-7 w-7 hover:bg-colorGreen/10 transition-all ${
+                  location.pathname === '/blogs'
+                    ? 'text-colorGreen'
+                    : 'text-colorBlack'
+                }`}
                 onClick={() =>
                   setMobileSubMenu({
                     ...mobileSubMenu,
@@ -308,7 +329,7 @@ export const Header = () => {
               onClick={() => setShowMobileMenu(perv => !perv)}
               to="/about-us"
               className={({ isActive }) =>
-                isActive ? 'text-colorGreenHigh' : 'text-colorBlack'
+                isActive ? 'text-colorGreen' : 'text-colorBlack'
               }
             >
               درباره ما
@@ -319,7 +340,7 @@ export const Header = () => {
               onClick={() => setShowMobileMenu(perv => !perv)}
               to="/contact-us"
               className={({ isActive }) =>
-                isActive ? 'text-colorGreenHigh' : 'text-colorBlack'
+                isActive ? 'text-colorGreen' : 'text-colorBlack'
               }
             >
               تماس با ما
@@ -329,7 +350,7 @@ export const Header = () => {
       </div>
       {/* overlay */}
       <div
-        className={`fixed inset-0 z-30  transition-all bg-black  overlay  ${
+        className={`fixed md:hidden inset-0 z-30  transition-all bg-black  overlay  ${
           showMobileMenu ? 'bg-opacity-10 visible' : 'opacity-0 invisible'
         }`}
       ></div>

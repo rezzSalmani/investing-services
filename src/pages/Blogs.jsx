@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import BlogItem from '../components/UI/BlogItem';
+import BlogItem from '../components/blog/BlogItem';
 import { HERO_CONTENT } from '../blogData';
 import { Link } from 'react-router-dom';
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import NewsItem from '../UI/NewsItem';
-
+import NewsItem from '../news/NewsItem';
 const LastNews = () => {
   return (
     <section className="my-10 md:my-20">

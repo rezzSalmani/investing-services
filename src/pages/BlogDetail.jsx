@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import BlogDetailItem from '../components/UI/BlogDetailItem';
+import React, { useEffect, useState } from 'react';
+import BlogDetailItem from '../components/blog/BlogDetailItem';
 import { useParams } from 'react-router-dom';
 import { HERO_CONTENT } from '../blogData';
 const BlogDetail = () => {
