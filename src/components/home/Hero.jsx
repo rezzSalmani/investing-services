@@ -45,7 +45,7 @@ const Hero = () => {
             )}
           </div>
           <div className="absolute bottom-1 left-0 right-0 flex h-fit gap-2 items-end justify-center lg:pb-10 w-full  z-10">
-            {HERO_CONTENT.map(item => (
+            {HERO_CONTENT.slice(0, 4).map(item => (
               <span
                 key={item.id}
                 onClick={() => setActive(item.id)}
@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-between pr-10 md:pr-0 child-hover:cursor-pointer">
           {HERO_CONTENT.slice(0, 4).map(item => (
             <div
-              className={`relative flex items-center py-5 px-10 w-full transition-all   ${
+              className={`relative flex items-center py-5 px-10 w-full transition-all ${
                 item.id === active
                   ? 'bg-colorGreen animate-fadeTop'
                   : 'bg-white'

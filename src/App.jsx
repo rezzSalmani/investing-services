@@ -1,12 +1,9 @@
-import Footer from './components/Footer';
 import Home from './pages/Home';
-import Header from './components/Header';
-import React, { useEffect } from 'react';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
-import Layout from './components/Layout';
+import Layout from './components/layout/Layout';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([

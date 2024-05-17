@@ -4,9 +4,6 @@ import HighViewBlogs from '../components/home/HighViewBlogs';
 import LastNews from '../components/home/LastNews';
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, []);
   return (
     <>
       <Hero />

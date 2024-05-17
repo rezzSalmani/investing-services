@@ -11,9 +11,7 @@ const BlogDetail = () => {
   // const c4 = useRef();
   // const c5 = useRef();
   // const c6 = useRef();
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, []);
+
   const blogItem = HERO_CONTENT.find(item => item.id === id);
 
   const helperMenu = [
@@ -24,10 +22,9 @@ const BlogDetail = () => {
     { title: 'راه حل', id: 'c5' },
     { title: 'پیام صوتی', id: 'c6' },
   ];
-  // write function when i click scroll to id section smooth
+
   function goToSection(id) {
     setActiveChevron(id);
-
     const offsetTop = document.getElementById(id).offsetTop - 128;
     window.scrollTo({
       top: offsetTop,

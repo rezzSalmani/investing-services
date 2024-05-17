@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import { NavLink, Link, useLocation } from 'react-router-dom';
+import { HERO_CONTENT } from '../../blogData';
 export const Header = () => {
   const location = useLocation();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -8,6 +9,7 @@ export const Header = () => {
     mainPage: false,
     blogs: false,
   });
+  useEffect(() => {}, []);
   return (
     <div className="sticky w-full top-0 z-30">
       <NavBar></NavBar>
@@ -41,18 +43,18 @@ export const Header = () => {
                 </span>
               </NavLink>
               {/* sub menu */}
-              <ul className="absolute top-0 left-0 right-0 invisible w-56 gap-2 px-8 py-8 mx-auto mt-10 space-y-2 text-base text-white list-disc transition-all shadow-md opacity-0 group-hover:visible group-hover:opacity-100 child-hover:text-zinc-700 child:transition-colors rounded-xl bg-colorGreen child:child:line-clamp-2  font-Dana">
+              <ul className="absolute top-0 left-0 right-0 invisible w-56 gap-2 px-8 py-8 mx-auto mt-10 space-y-2 text-base text-white list-disc transition-all shadow-md opacity-0 group-hover:visible group-hover:opacity-100 child-hover:text-zinc-700 child:transition-colors rounded-xl bg-colorGreen child:child:line-clamp-2 font-Dana">
                 <li>
-                  <a href="#">رزرو کوچینگ معامله گری</a>
+                  <Link to={`/blogs/c1`}>رزرو کوچینگ معامله گری</Link>
                 </li>
                 <li>
-                  <a href="#">کسب و کار آنلاین</a>
+                  <Link to={`/blogs/c2`}>کسب و کار آنلاین</Link>
                 </li>
                 <li>
-                  <a href="#">رشد غیر مستقیم روزانه</a>
+                  <Link to={`/blogs/c3`}>رشد غیر مستقیم روزانه</Link>
                 </li>
                 <li>
-                  <a href="#">متن تستی </a>
+                  <Link to={`/blogs/c4`}>متن تستی </Link>
                 </li>
               </ul>
             </li>
@@ -84,19 +86,19 @@ export const Header = () => {
               {/* sub menu */}
               <ul className="absolute top-0 left-0 right-0 invisible w-56 gap-2 px-8 py-8 mx-auto mt-10 space-y-2 text-base text-white list-disc transition-all shadow-md opacity-0 group-hover:visible group-hover:opacity-100 child-hover:text-zinc-700 child:transition-colors rounded-xl bg-colorGreen child:child:line-clamp-2 font-Dana">
                 <li>
-                  <a href="#">نمودار سرمایه </a>
+                  <Link to={`/blogs/c5`}>نمودار سرمایه </Link>
                 </li>
                 <li>
-                  <a href="#">کسب و کار آنلاین</a>
+                  <Link to={`/blogs/c6`}>کسب و کار آنلاین</Link>
                 </li>
                 <li>
-                  <a href="#">سود حرفه ای در بازار سرمایه</a>
+                  <Link to={`/blogs/c7`}>سود حرفه ای در بازار سرمایه</Link>
                 </li>
                 <li>
-                  <a href="#">تحلیل مالی و سرمایه</a>
+                  <Link to={`/blogs/c8`}>تحلیل مالی و سرمایه</Link>
                 </li>
                 <li>
-                  <a href="#">رشد غیر مستقیم روزانه</a>
+                  <Link to={`/blogs/c2`}>رشد غیر مستقیم روزانه</Link>
                 </li>
               </ul>
             </li>

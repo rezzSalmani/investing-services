@@ -14,9 +14,7 @@ const Blogs = () => {
       behavior: 'smooth',
     });
   }
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, []);
+
   return (
     <section className="my-5 md:my-10 h-full">
       <div className="relative h-[430px] md:h-[830px] overflow-hidden">
