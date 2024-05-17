@@ -2,26 +2,18 @@ import React, { useEffect, useState } from 'react';
 import BlogDetailItem from '../components/blog/BlogDetailItem';
 import { useParams } from 'react-router-dom';
 import { HERO_CONTENT } from '../blogData';
+const helperMenu = [
+  { title: 'مقدمه', id: 'c1' },
+  { title: 'بررسی اجمالی', id: 'c2' },
+  { title: 'اطلاعات اولیه', id: 'c3' },
+  { title: 'اطلاعات کلی', id: 'c4' },
+  { title: 'راه حل', id: 'c5' },
+  { title: 'پیام صوتی', id: 'c6' },
+];
 const BlogDetail = () => {
   const [activeChevron, setActiveChevron] = useState('c1');
   const { id } = useParams();
-  // const c1 = useRef();
-  // const c2 = useRef();
-  // const c3 = useRef();
-  // const c4 = useRef();
-  // const c5 = useRef();
-  // const c6 = useRef();
-
   const blogItem = HERO_CONTENT.find(item => item.id === id);
-
-  const helperMenu = [
-    { title: 'مقدمه', id: 'c1' },
-    { title: 'بررسی اجمالی', id: 'c2' },
-    { title: 'اطلاعات اولیه', id: 'c3' },
-    { title: 'اطلاعات کلی', id: 'c4' },
-    { title: 'راه حل', id: 'c5' },
-    { title: 'پیام صوتی', id: 'c6' },
-  ];
 
   function goToSection(id) {
     setActiveChevron(id);

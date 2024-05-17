@@ -45,11 +45,6 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="relative bg-aboutUsImg1 bg-cover bg-no-repeat h-[350px] md:h-[300px] lg:h-[350px] xl:h-[450px]  w-full md:w-1/2 overflow-hidden">
-            {/* <img
-              src="/images/aboutUsHowWeWork.png"
-              alt="aboutUsHowWeWork"
-              className=" object-contain"
-            /> */}
             <img
               src="/images/aboutUsShapeHowOurWorks.svg"
               alt="aboutUsShapeHowOurWorks"

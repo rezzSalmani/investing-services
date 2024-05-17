@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import { NavLink, Link, useLocation } from 'react-router-dom';
-import { HERO_CONTENT } from '../../blogData';
+
 export const Header = () => {
   const location = useLocation();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -9,7 +9,7 @@ export const Header = () => {
     mainPage: false,
     blogs: false,
   });
-  useEffect(() => {}, []);
+
   return (
     <div className="sticky w-full top-0 z-30">
       <NavBar></NavBar>

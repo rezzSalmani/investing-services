@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import BlogItem from '../components/blog/BlogItem';
 import { HERO_CONTENT } from '../blogData';
 import { Link } from 'react-router-dom';

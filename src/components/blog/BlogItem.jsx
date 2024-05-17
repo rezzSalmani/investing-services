@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const BlogItem = ({ isActive, id }) => {
-  // create a radom color array
-  const [color, setColor] = useState('');
   const colorArray = ['#C2BB1B', '#1BC286', '#C21BB1', '#6CC21B'];
-  // shuffle the colorArray to get one random color each time the component is rendered
 
   return (
     <div
