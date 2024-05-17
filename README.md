@@ -5,13 +5,15 @@
 <br />
 <div align="center">
   <a href="">
-    <img src="https://github.com/rezzSalmani/investing-services/blob/main/public/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/rezzSalmani/investing-services/blob/master/public/images/main-logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Investing web</h3>
+<h3 align="center">Investment Web Application</h3>
 
   <p align="center">
   super simple react investing web application with focus on styling and dynamic structure component, the project doesn't have any significant functionality, it just shows some services.
+    <br />
+    <br />
     <br />
     <a href="https://github.com/rezzSalmani/investing-services">View Demo</a>
     ·
@@ -38,6 +40,7 @@
 * routing react router dom
 * component base structure 
 * dynamic content
+* fully mobile responsive
 
 ### Built With
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
