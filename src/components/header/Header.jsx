@@ -137,7 +137,7 @@ export const Header = () => {
         </div>
         <div
           className="container flex md:hidden items-center justify-between h-full"
-          onClick={() => setShowMobileMenu(perv => !perv)}
+          onClick={() => setShowMobileMenu(false)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +181,7 @@ export const Header = () => {
           </Link>
           <span
             className="rounded-full flex-all h-7 w-7 hover:bg-colorGreen/10"
-            onClick={() => setShowMobileMenu(perv => !perv)}
+            onClick={() => setShowMobileMenu(false)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
