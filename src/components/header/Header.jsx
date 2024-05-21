@@ -10,6 +10,10 @@ export const Header = () => {
     blogs: false,
   });
 
+  function closeAllMobileMenu() {
+    setShowMobileMenu(false);
+    setMobileSubMenu({ mainPage: false, blogs: false });
+  }
   return (
     <div className="sticky w-full top-0 z-30">
       <NavBar></NavBar>
@@ -241,23 +245,32 @@ export const Header = () => {
             </div>
             {/* sub menu */}
             <ul
-              className={`space-y-2 pr-8  text-base transition-all text-zinc-700  child-hover:text-colorGreen child-hover:submenu__item--active rounded-xl child:child:line-clamp-2 child:transition-all child-hover:pr-4 child:w-fit ${
+              className={`space-y-2 pr-6 text-base transition-all text-zinc-700  child-hover:text-colorGreen child-hover:submenu__item--active rounded-xl child:child:line-clamp-2 child:transition-all child-hover:pr-4 child:w-fit ${
                 mobileSubMenu.mainPage
-                  ? 'visible opacity-100 h-full py-4 translate-y-1'
+                  ? 'visible opacity-100 h-full py-2 translate-y-1'
                   : 'h-0 invisible opacity-0'
               }`}
             >
               <li>
-                <a href="#"> ابزار جعبه سرمایه</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c1`}>
+                  {' '}
+                  ابزار جعبه سرمایه
+                </Link>
               </li>
               <li>
-                <a href="#">کسب و کار آنلاین</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c2`}>
+                  کسب و کار آنلاین
+                </Link>
               </li>
               <li>
-                <a href="#">رشد غیر مستقیم روزانه</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c3`}>
+                  رشد غیر مستقیم روزانه
+                </Link>
               </li>
               <li>
-                <a href="#">نمایشگاه ها</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c4`}>
+                  نمایشگاه ها
+                </Link>
               </li>
             </ul>
           </li>
@@ -303,26 +316,36 @@ export const Header = () => {
             </div>
             {/* sub menu */}
             <ul
-              className={`space-y-2 pr-8  text-base transition-all text-zinc-700  child-hover:text-colorGreen child-hover:submenu__item--active rounded-xl child:child:line-clamp-2 child:transition-all child-hover:pr-4 child:w-fit ${
+              className={`space-y-2 pr-6 text-base transition-all text-zinc-700  child-hover:text-colorGreen child-hover:submenu__item--active rounded-xl child:child:line-clamp-2 child:transition-all child-hover:pr-4 child:w-fit ${
                 mobileSubMenu.blogs
-                  ? 'visible opacity-100 h-full py-4 translate-y-1'
+                  ? 'visible opacity-100 h-full py-2 translate-y-1'
                   : 'h-0 invisible opacity-0'
               }`}
             >
               <li>
-                <a href="#">نمودار سرمایه </a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c5`}>
+                  نمودار سرمایه{' '}
+                </Link>
               </li>
               <li>
-                <a href="#">کسب و کار آنلاین</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c6`}>
+                  کسب و کار آنلاین
+                </Link>
               </li>
               <li>
-                <a href="#">سود حرفه ای در بازار سرمایه</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c7`}>
+                  سود حرفه ای در بازار سرمایه
+                </Link>
               </li>
               <li>
-                <a href="#">تحلیل مالی و سرمایه</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c8`}>
+                  تحلیل مالی و سرمایه
+                </Link>
               </li>
               <li>
-                <a href="#">رشد غیر مستقیم روزانه</a>
+                <Link onClick={closeAllMobileMenu} to={`/blogs/c1`}>
+                  رشد غیر مستقیم روزانه
+                </Link>
               </li>
             </ul>
           </li>
