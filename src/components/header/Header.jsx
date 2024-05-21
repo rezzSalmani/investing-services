@@ -135,24 +135,26 @@ export const Header = () => {
             <img src="/images/main-logo.svg" className="w-8" alt="" />
           </Link>
         </div>
-        <div
-          className="container flex md:hidden items-center justify-between h-full"
-          onClick={() => setShowMobileMenu(false)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
+        <div className="container flex md:hidden items-center justify-between h-full">
+          <span
+            onClick={() => setShowMobileMenu(perv => !perv)}
+            className="cursor-pointer"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-            />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </span>
           <Link
             to="/"
             className="flex items-center gap-2 text-lg lg:gap-4 lg:text-2xl font-MorabbaMedium"
