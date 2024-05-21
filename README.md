@@ -15,7 +15,7 @@
     <br />
     <br />
     <br />
-    <a href="https://investing-services-br63151v9-reza-salmanis-projects.vercel.app/">View Demo</a>
+    <a href="https://investing-services.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/rezzSalmani/investing-services/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
