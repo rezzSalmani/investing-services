@@ -11,11 +11,11 @@
 <h3 align="center">Investment Web Application</h3>
 
   <p align="center">
-  super simple react investing web application with focus on styling and dynamic structure component, the project doesn't have any significant functionality, it just shows some services.
+  super simple react investing web application with focus on styling and dynamic routes and structure component, the project doesn't have any significant functionality, it just shows some services.
     <br />
     <br />
     <br />
-    <a href="https://github.com/rezzSalmani/investing-services">View Demo</a>
+    <a href="https://investing-services-br63151v9-reza-salmanis-projects.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/rezzSalmani/investing-services/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -30,7 +30,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot](https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp2.png)](https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp2.png)
+[![Product Name Screen Shot](https://github.com/rezzSalmani/investing-services/blob/master/src/assets/shot01.png)](https://github.com/rezzSalmani/investing-services/blob/master/src/assets/shot01.png)
 
 
 
@@ -83,22 +83,6 @@ Follow following steps to run the project.
    npm run dev
    ```
 
-<!-- USAGE EXAMPLES -->
-## Usage
-<!--
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
--->
-  
-
-<div align="center" display="inline-block">
-  <a href="https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp1.png" display="inline-block" width="50%" height="100%">
-    <img src="https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp1.png" alt="image1" width="50%" height="100%" display="inline-block">
-  </a>
-  <a href="https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp3.png" display="inline-block" width="50%" height="100%">
-    <img src="https://github.com/rezzSalmani/investing-services/blob/main/src/assets/screenShots/ReactQuizApp3.png" alt="image2" width="100%" height="100%" display="inline-block">
-  </a>
-
-</div>
 
 
 
