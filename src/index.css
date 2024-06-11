@@ -9,27 +9,36 @@
 
   @font-face {
     font-family: 'Dana'; /* 400*/
-    src: url('/fonts/Dana/woff2/DanaFaNum-Regular.woff2'), format('woff2');
+    src: url('/fonts/Dana/woff2/DanaFaNum-Regular.woff2') format('woff2'),
+      url('/fonts/Dana/woff/DanaFaNum-Regular.woff') format('woff');
   }
   @font-face {
     font-family: 'Dana Medium'; /* 500*/
-    src: url('/fonts/Dana/woff2/DanaFaNum-Medium.woff2'), format('woff2');
+    src: url('/fonts/Dana/woff2/DanaFaNum-Medium.woff2') format('woff2'),
+      url('/fonts/Dana/woff/DanaFaNum-Medium.woff') format('woff');
   }
   @font-face {
     font-family: 'Dana Bold'; /* 600*/
-    src: url('/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2'), format('woff2');
+    src: url('/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2') format('woff2'),
+      url('/fonts/Dana/woff/DanaFaNum-DemiBold.woff') format('woff');
   }
   @font-face {
     font-family: 'Morabba Light';
-    src: url('/fonts/Morabba/woff2/Morabba-Light.woff2'), format('woff2');
+    src: url('/fonts/Morabba/woff2/Morabba-Light.woff2') format('woff2'),
+      url('/fonts/Morabba/woff/Morabba-Light.woff') format('woff');
   }
   @font-face {
     font-family: 'Morabba Medium';
-    src: url('/fonts/Morabba/woff2/Morabba-Medium.woff2'), format('woff2');
+    src: url('/fonts/Morabba/woff2/Morabba-Medium.woff2') format('woff2'),
+      url('/fonts/Morabba/woff/Morabba-Medium.woff') format('woff');
   }
   @font-face {
     font-family: 'Morabba Bold';
-    src: url('/fonts/Morabba/woff2/Morabba-Bold.woff2'), format('woff2');
+    src: url('/fonts/Morabba/woff2/Morabba-Bold.woff2') format('woff2'),
+      url('/fonts/Morabba/woff/Morabba-Bold.woff') format('woff');
+  }
+  body {
+    font-family: 'Dana';
   }
 }
 
